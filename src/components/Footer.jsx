@@ -3,11 +3,11 @@ import {BsLinkedin,BsGithub} from 'react-icons/bs'
 import {SiLeetcode} from 'react-icons/si'
 function Footer() {
   return (
-    <div className='px-20 bg-black text-white'>
-      <div className='flex justify-between py-16'>
-        <div className='flex flex-col gap-3 w-3/4'>
-          <h1 className='font-bold text-3xl'>Anas Sain</h1>
-          <p className='text-lg'>A Full Stack focused Web Developer building the Full Stack Websites and Web Applications that leads to the success of the overall product</p>
+    <div className='lg:px-20 md:px-8 px-3 bg-black text-white'>
+      <div className='flex md:flex-row flex-col-reverse gap-8 justify-between md:py-16 py-8'>
+        <div className='flex flex-col gap-3 md:w-3/4'>
+          <h1 className='font-bold lg:text-3xl  text-2xl'>Anas Sain</h1>
+          <p className='lg:text-lg'>A Full Stack focused Web Developer building the Full Stack Websites and Web Applications that leads to the success of the overall product</p>
         </div>
         <div className='flex flex-col gap-4 '>
           <h1 className='text-2xl font-bold'>Socials</h1>

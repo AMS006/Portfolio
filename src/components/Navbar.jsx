@@ -48,16 +48,16 @@ function NavbarSm(){
             </div>
             <div className={`flex flex-col items-center absolute top-16 z-10 w-full justify-center gap-6 font-bold font-mono text-lg py-3 bg-white transition ease-in-out duration-500 ${isOpen?'translate-x-0':'-translate-x-full'}`}>
                 <div>
-                    <a href="#home">HOME</a>
+                    <a href="#home" onClick={() => setIsOpen(!isOpen)}>HOME</a>
                 </div>
                 <div>
-                    <a href="#about">ABOUT</a>
+                    <a href="#about" onClick={() => setIsOpen(!isOpen)}>ABOUT</a>
                 </div>
                 <div>
-                    <a href="#projects">PROJECTS</a>
+                    <a href="#projects" onClick={() => setIsOpen(!isOpen)}>PROJECTS</a>
                 </div>
                 <div>
-                    <a href="#contact">CONTACT</a>
+                    <a href="#contact" onClick={() => setIsOpen(!isOpen)}>CONTACT</a>
                 </div>
             </div>
         </>
@@ -66,10 +66,10 @@ function NavbarSm(){
 function Navbar() {
   return (
     <>
-        <div className='md:hidden block'>
+        <div className='md:hidden block sticky top-0 bg-white z-10'>
             <NavbarSm />
         </div>
-        <div className='md:block hidden'>
+        <div className='md:block hidden sticky top-0 bg-white z-10'>
             <NavbarLg />
         </div>
     </>

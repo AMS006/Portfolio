@@ -9,23 +9,27 @@ function Projects() {
     {
      image:tiffinmanagment,
      id:"project-1",
-     name:"Tiffin Managment System"
+     name:"Tiffin Managment System",
+     overview:"Tiffin Managment System is a project made for the tiffin providers who can sell their tiffin service online and a user a buy a home made tiffin from those sellers"
     },
     {
       image:zomatoclone,
       id:"project-2",
-      name:"Zomato Clone"
+      name:"Zomato Clone",
+      overview:"Zomato Clone was the first MERN stack project build by me during training course of devtown. I have learned lots of technologies while building this website"
     },
     {
       image:portfolio,
       id:"project-3",
-      name:"My Portfolio"
+      name:"My Portfolio",
+      overview:"Portfolio is the website build my me for showcasing my all skills my all projects to everyone. It was a great experience for me while building this website"
     },
     {
       image:bookmyshow,
       id:"project-4",
-      name:"Book My Show Clone"
-    }
+      name:"Book My Show Clone",
+      overview:"Book My Show Clone was the first complete website which I have build after learning complete React I have used MovieDB API for movies"
+    }  
   ]
   return (
     <div className='py-8 lg:px-20 md:px-10 px-4' id='projects'>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import {send} from 'emailjs-com'
 function Contact() {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
@@ -8,6 +8,18 @@ function Contact() {
     const handleSubmit = (e) =>{
         e.preventDefault()
         console.log(name,email,message)
+        const toSend = {
+            from_name:name,
+            reply_to:email,
+            to_name:'Anas',
+            message
+        }
+        send(
+            'service_2va4lnf',
+            'template_ohsduym',
+            toSend,
+            'J3k6_m6TXQ91y-tAT'
+        )
         setName("")
         setEmail("")
         setMessage("")

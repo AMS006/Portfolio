@@ -12,9 +12,9 @@ function Footer() {
         <div className='flex flex-col gap-4 '>
           <h1 className='text-2xl font-bold'>Socials</h1>
           <div className='flex gap-6 text-2xl'>
-            <span><BsLinkedin /></span>
-            <span><BsGithub /></span>
-            <span><SiLeetcode /></span>
+            <a href="https://www.linkedin.com/in/anas-sain-9b9231221/" target='_blank' rel='noreferrer'><span><BsLinkedin /></span></a>
+            <a href="https://github.com/AMS006" target='_blank' rel='noreferrer'><span><BsGithub /></span></a>
+            <a href="https://leetcode.com/Anas_Sain_006/" target='_blank' rel='noreferrer'><span><SiLeetcode /></span></a>
           </div>
         </div>
       </div>

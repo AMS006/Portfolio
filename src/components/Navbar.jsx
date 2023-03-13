@@ -49,7 +49,7 @@ function NavbarSm(){
                     <FaBars />
                 </div>
             </div>
-            <div className={`${mode?'bg-slate-700 text-white ':' '} flex flex-col items-center absolute top-16 z-10 w-full justify-center gap-6 font-bold font-mono text-lg py-3 bg-white transition ease-in-out duration-500 ${isOpen?'translate-x-0':'-translate-x-full'}`}>
+            <div className={`${mode?'bg-slate-700 text-white ':'bg-white '} flex flex-col items-center absolute top-16 z-10 w-full justify-center gap-6 font-bold font-mono text-lg py-3 transition ease-in-out duration-500 ${isOpen?'translate-x-0':'-translate-x-full'}`}>
                 <div>
                     <a href="#home" onClick={() => setIsOpen(!isOpen)}>HOME</a>
                 </div>

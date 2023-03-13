@@ -4,9 +4,8 @@ import profile from '../images/profile.jpg'
 import { UserContext } from '../UserContext'
 function NavbarLg() {
     const {mode} = useContext(UserContext)
-
     return(
-        <div className={`${mode?'bg-slate-800 text-white':'bg-white '} flex justify-between py-4 lg:px-10 md:px-4 px-2 shadow-md`}>
+        <div className={`${mode?'bg-slate-800 text-white ':'bg-white '} flex justify-between py-4 lg:px-10 md:px-4 px-2 shadow-md`}>
             <div className='flex gap-3 items-center justify-center'>
                 <div className='h-12 w-12 overflow-hidden rounded-full'>
                     <img src={profile} alt="" className='w-full h-full overflow-hidden'/>
@@ -37,7 +36,7 @@ function NavbarSm(){
     const {mode} = useContext(UserContext)
     return(
         <>
-            <div className='flex justify-between shadow px-4 py-2 items-center relative'>
+            <div className={`${mode?'bg-slate-800 text-white ':' '}flex justify-between shadow px-4 py-2 items-center relative`}>
                 <div className='flex gap-3 items-center justify-center'>
                     <div className='h-12 w-12 overflow-hidden rounded-full'>
                         <img src={profile} alt="" className='w-full h-full overflow-hidden'/>
@@ -71,7 +70,7 @@ function Navbar() {
     const {mode} = useContext(UserContext)
   return (
     <>
-        <div className={`${mode ? 'bg-slate-800 text-white ':''}md:hidden block sticky top-0 bg-white z-10`}>
+        <div className={`${mode ? 'bg-slate-800 text-white ':'bg-white '} md:hidden block sticky top-0  z-10`}>
             <NavbarSm />
         </div>
         <div className={`md:block hidden sticky top-0 bg-white z-10`}>

@@ -21,6 +21,20 @@
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite;
 }
+.mousedark::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+}
 @keyframes wheel {
     to {
         opacity: 0;

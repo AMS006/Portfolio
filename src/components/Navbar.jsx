@@ -1,9 +1,12 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import profile from '../images/profile.jpg'
+import { UserContext } from '../UserContext'
 function NavbarLg() {
+    const {mode} = useContext(UserContext)
+
     return(
-        <div className='flex justify-between py-4 lg:px-10 md:px-4 px-2 shadow-md '>
+        <div className={`${mode?'bg-slate-800 text-white':'bg-white '} flex justify-between py-4 lg:px-10 md:px-4 px-2 shadow-md`}>
             <div className='flex gap-3 items-center justify-center'>
                 <div className='h-12 w-12 overflow-hidden rounded-full'>
                     <img src={profile} alt="" className='w-full h-full overflow-hidden'/>
@@ -31,6 +34,7 @@ function NavbarLg() {
 }
 function NavbarSm(){
     const [isOpen,setIsOpen] = useState(false)
+    const {mode} = useContext(UserContext)
     return(
         <>
             <div className='flex justify-between shadow px-4 py-2 items-center relative'>
@@ -46,7 +50,7 @@ function NavbarSm(){
                     <FaBars />
                 </div>
             </div>
-            <div className={`flex flex-col items-center absolute top-16 z-10 w-full justify-center gap-6 font-bold font-mono text-lg py-3 bg-white transition ease-in-out duration-500 ${isOpen?'translate-x-0':'-translate-x-full'}`}>
+            <div className={`${mode?'bg-slate-700 text-white ':' '} flex flex-col items-center absolute top-16 z-10 w-full justify-center gap-6 font-bold font-mono text-lg py-3 bg-white transition ease-in-out duration-500 ${isOpen?'translate-x-0':'-translate-x-full'}`}>
                 <div>
                     <a href="#home" onClick={() => setIsOpen(!isOpen)}>HOME</a>
                 </div>
@@ -64,12 +68,13 @@ function NavbarSm(){
     )
 }
 function Navbar() {
+    const {mode} = useContext(UserContext)
   return (
     <>
-        <div className='md:hidden block sticky top-0 bg-white z-10'>
+        <div className={`${mode ? 'bg-slate-800 text-white ':''}md:hidden block sticky top-0 bg-white z-10`}>
             <NavbarSm />
         </div>
-        <div className='md:block hidden sticky top-0 bg-white z-10'>
+        <div className={`md:block hidden sticky top-0 bg-white z-10`}>
             <NavbarLg />
         </div>
     </>

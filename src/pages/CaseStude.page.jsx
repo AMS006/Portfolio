@@ -2,10 +2,10 @@ import React,{useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import CaseStudyTobBar from '../components/CaseStudyTobBar';
 import HomeLayout from '../layouts/Home.layouts'
-import tiffinmanagment from '../images/tiffinmanagment.jpg'
-import zomatoclone from '../images/zomatoclone.jpg'
-import portfolio from '../images/portfolio.jpg'
-import bookmyshow from '../images/bookmyshow1.jpg'
+import tiffinmanagment from '../images/tiffinmanagment-bg.png'
+import zomatoclone from '../images/zomatoclone-bg.png'
+import portfolio from '../images/portfolio-bg.png'
+import bookmyshow from '../images/bookmyshow1-bg.png'
 import CaseStudeOverview from '../components/CaseStudeOverview';
 
 function CaseStudePage() {
@@ -26,6 +26,7 @@ function CaseStudePage() {
             tools:["React","MongoDB","ExpressJs","NodeJs","MaterialUI","TailwindCSS","Redux"],
             github:"https://github.com/AMS006/TiffinManagment",
             live:"https://tiffin-managment-client.vercel.app/",
+            youtube:"https://www.youtube.com/watch?v=qdpHaTL_Yuw",
             image:tiffinmanagment
         },
         {
@@ -34,6 +35,7 @@ function CaseStudePage() {
             overview:["Zomato Clone was the first MERN stack project build by me during training course of devtown. I have learned lots of technologies while building this website","While building this website I have also learned about Docker and kubernetes and the website is deployed on AWS EC2 Instance","For storing the Images I have used AWS S3 Bucket and state managment is done using Redux"],
             tools:["React","MongoDB","ExpressJs","NodeJs","MaterialUI","TailwindCSS","Redux"],
             github:"https://github.com/AMS006/Zomato-clone",
+            youtube:"https://www.youtube.com/watch?v=SvYLn9451to",
             image:zomatoclone
         },
         {
@@ -60,7 +62,7 @@ function CaseStudePage() {
     
   return (
     <div>
-        <CaseStudyTobBar project={project}/>
+        <CaseStudyTobBar project={project} />
         <CaseStudeOverview project={project} />
     </div>
   )

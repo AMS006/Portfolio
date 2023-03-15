@@ -1,12 +1,12 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import CaseStudyTobBar from '../components/CaseStudyTobBar';
-import HomeLayout from '../layouts/Home.layouts'
 import tiffinmanagment from '../images/tiffinmanagment-bg.png'
 import zomatoclone from '../images/zomatoclone-bg.png'
 import portfolio from '../images/portfolio-bg.png'
 import bookmyshow from '../images/bookmyshow1-bg.png'
 import CaseStudeOverview from '../components/CaseStudeOverview';
+import CaseStudyLayout from '../layouts/CaseStudy.layout';
 
 function CaseStudePage() {
 
@@ -68,4 +68,4 @@ function CaseStudePage() {
   )
 }
 
-export default HomeLayout(CaseStudePage)
+export default CaseStudyLayout(CaseStudePage)

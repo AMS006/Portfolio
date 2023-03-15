@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import ModeChange from './components/ModeChange';
 import { UserContextProvider } from './UserContext';
+import Download from './components/Download';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <UserContextProvider>
       <ModeChange />
       <App />
+      <Download />
     </UserContextProvider>
   </BrowserRouter>
 );

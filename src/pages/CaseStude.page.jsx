@@ -22,7 +22,7 @@ function CaseStudePage() {
         {
             id:'project-1',
             name:"Tiffin Managment System",
-            overview:["Tiffin Managment System is a project which is build using MERN stack and made for the tiffin providers who can sell their tiffin service online and a user a buy a home made tiffin from those sellers","This website also contain admin dashboard for tiffin providers from where providers can manage there orders and tiffin services","A User on the website can search for the provider and can order tiffin from any provider and can also cancel the order before provider delivered the order"],
+            overview:["The MERN stack was used to build the Tiffin Management System, which was created for tiffin suppliers who may offer their services online and allow users to purchase homemade tiffins from those sellers.","Additionally, this website has an admin panel where tiffin suppliers may manage their orders and tiffin services.","The website allows users to browse for providers, order tiffin from any source, and cancel orders before they are delivered."],
             tools:["React","MongoDB","ExpressJs","NodeJs","MaterialUI","TailwindCSS","Redux"],
             github:"https://github.com/AMS006/TiffinManagment",
             live:"https://tiffin-managment-client.vercel.app/",
@@ -32,7 +32,7 @@ function CaseStudePage() {
         {
             id:'project-2',
             name:"Zomato Clone",
-            overview:["Zomato Clone was the first MERN stack project build by me during training course of devtown. I have learned lots of technologies while building this website","While building this website I have also learned about Docker and kubernetes and the website is deployed on AWS EC2 Instance","For storing the Images I have used AWS S3 Bucket and state managment is done using Redux"],
+            overview:["My first MERN stack project during the Devtown training programme was Zomato Clone. I gained a lot of technological knowledge while creating this website.","The website is hosted on an AWS EC2 instance, and I learned about Docker and Kubernetes while developing it.","I utilised an AWS S3 bucket for storing the images, and Redux is used for state management."],
             tools:["React","MongoDB","ExpressJs","NodeJs","MaterialUI","TailwindCSS","Redux"],
             github:"https://github.com/AMS006/Zomato-clone",
             youtube:"https://www.youtube.com/watch?v=SvYLn9451to",
@@ -41,7 +41,7 @@ function CaseStudePage() {
         {
             id:'project-3',
             name:"Portfolio",
-            overview:["Portfolio is the website build my me for showcasing my all skills my all projects to everyone. It was a great experience for me while building this website","This portfolio website contains all details of my projects with overview and tools used in that project"],
+            overview:["The website I created for my portfolio allows me to show off all of my abilities and completed projects. I had a wonderful experience creating this website.","My portfolio website includes a complete list of my projects, along with an overview and the tools I used for each one."],
             tools:["React","TailwindCSS","Github","Vercel"],
             github:"https://github.com/AMS006/Portfolio",
             live:"https://portfolio-orcin-seven-11.vercel.app/",
@@ -50,7 +50,7 @@ function CaseStudePage() {
         {
             id:'project-4',
             name:"Book My Show Clone",
-            overview:["Book My Show Clone was the first complete website which I have build after learning complete React I have used MovieDB API for movies","It was a great experience for me while developing this website"],
+            overview:["Book My Show Clone was the first fully functional website I created after learning React. I used the MovieDB API for movies.","When creating this website, it was a wonderful learning experience for me."],
             tools:["React","TailwindCSS","MovieDB API","Git","Github","Redux"],
             github:"https://github.com/AMS006/BookMyShow-clone-",
             live:"https://book-my-show-clone-mu.vercel.app/",

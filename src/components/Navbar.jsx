@@ -1,19 +1,20 @@
 import React, {useContext, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import profile from '../images/profile.jpg'
 import { UserContext } from '../UserContext'
 function NavbarLg() {
     const {mode} = useContext(UserContext)
     return(
         <div className={`${mode?'bg-slate-800 text-white ':'bg-white '} flex justify-between py-4 lg:px-10 md:px-4 px-2 shadow-md`}>
-            <div className='flex gap-3 items-center justify-center'>
+            <Link to={'/'} className='flex gap-3 items-center justify-center'>
                 <div className='h-12 w-12 overflow-hidden rounded-full'>
                     <img src={profile} alt="" className='w-full h-full overflow-hidden'/>
                 </div>
                 <div>
                     <h1 className='font-extrabold text-2xl font-mono'>ANAS SAIN</h1>
                 </div>
-            </div>
+            </Link>
             <div className='flex items-center justify-center gap-10 font-bold font-mono text-lg'>
                 <div>
                     <a href="#home">HOME</a>

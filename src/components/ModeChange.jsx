@@ -9,7 +9,7 @@ function ModeChange() {
         {mode ?<div className='bg-white p-2 text-slate-700 rounded-full'>
             <MdOutlineLightMode />
         </div>:
-        <div className='bg-slate-700 p-2 text-white rounded-full'>
+        <div className='bg-slate-800 p-2 text-white rounded-full'>
             <MdOutlineDarkMode />
         </div>}
     </div>

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { useNavigate } from 'react-router-dom'
+import {BsYoutube,BsLink} from 'react-icons/bs'
+
 import { UserContext } from '../UserContext'
 
 function CaseStudeOverview({project}) {
-    const navigate = useNavigate()
     const {mode} = useContext(UserContext)
   return (
     <div className={`${mode?'bg-slate-900 text-white ':' '}lg:px-20 md:px-8 px-3 flex items-center flex-col w-full`}>
@@ -26,17 +26,18 @@ function CaseStudeOverview({project}) {
         </div>
         <div className='flex gap-4 items-center lg:w-3/4 md:w-4/5 pb-8'>
             {project?.live ? 
-            <div>
+            <div className='w-full'>
                 <h1 className='py-4 font-bold text-3xl lg:w-3/4 md:w-4/5 '>See Live</h1>
                 <div className='flex md:gap-4 gap-2 items-center'>
-                    <a className='bg-blue-500 border-2 border-blue-500 rounded text-white font-semibold sm:px-5 px-3 py-2' href={project.live} target='_blank'>PROJECT LINK</a>
-                    {project?.youtube && <a className='bg-blue-500 border-2 border-blue-500 rounded text-white font-semibold sm:px-5 px-3  py-2' href={project.youtube} target='_blank'>Video LINK</a>}
-                    <button className='border-2 border-blue-500 text-blue-500 px-5 py-2 rounded font-semibold' onClick={()=> navigate('/')}>Go BACK</button>
+                    <a className='flex items-center gap-1.5 justify-center bg-blue-500 border-2 border-blue-500 rounded text-white font-semibold sm:px-3 px-2 py-2' href={project.live} target='_blank' rel="noreferrer"><BsLink className='text-xl' /> Live</a>
+                    {project?.youtube && <a className='flex items-center gap-1.5 justify-center bg-blue-500 border-2 border-blue-500 rounded text-white font-semibold sm:px-3 px-2  py-2' href={project.youtube} target='_blank' rel="noreferrer"><BsYoutube className='text-xl'/>Video</a>}
                 </div>
             </div>:
-            <div className='flex md:gap-4 gap-2 items-center lg:w-3/4 md:w-4/5 pb-8'>
-                {project?.youtube && <a className='bg-blue-500 border-2 border-blue-500 rounded text-white font-semibold sm:px-5 px-3  py-2' href={project.youtube} target='_blank'>Video LINK</a>}
-                <button className='border-2 border-blue-500 text-blue-500 sm:px-5 px-3 py-2 rounded font-semibold' onClick={()=> navigate('/')}>Go BACK</button>
+            <div className='w-full'>
+                <h1 className='py-4 font-bold text-3xl lg:w-3/4 md:w-4/5 '>See Live</h1>
+                <div className='flex md:gap-4 gap-2 items-center lg:w-3/4 md:w-4/5 pb-8'>
+                    {project?.youtube && <a className='flex items-center justify-center gap-1.5 bg-blue-500 border-2 border-blue-500 rounded text-white font-semibold sm:px-3 px-2  py-2' href={project.youtube} target='_blank' rel="noreferrer"><BsYoutube className='text-xl'/>Video</a>}
+                </div>
             </div>
             }
         </div>

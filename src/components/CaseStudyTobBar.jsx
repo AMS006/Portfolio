@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { UserContext } from '../UserContext'
-
+import { BsGithub } from 'react-icons/bs'
 
 function CaseStudyTobBar({project}) {
     const {mode} = useContext(UserContext)
@@ -9,7 +9,7 @@ function CaseStudyTobBar({project}) {
         <h1 className={`${mode?'text-white ':' '}md:text-5xl  text-3xl font-extrabold text-center`}>{project.name}</h1>
         <p className={`${mode?'text-white ':'text-gray-700 '} text-xl`}>This page contains the case study of {project.name} Project which <br /> includes  the Project Overview, Tools Used and Live Links to the official product.</p>
         <div className='bg-blue-500 rounded w-48 py-3 text-lg font-semibold text-white'>
-            <a className='w-full' href={project.github} target='_blank'>Source Code</a>
+            <a className='flex items-center justify-center gap-1.5 w-full' href={project.github} target='_blank' rel="noreferrer"><BsGithub className='text-xl'/> Source Code</a>
         </div>
     </div>
   )

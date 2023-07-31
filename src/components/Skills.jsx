@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import {FaHtml5,FaCss3Alt,FaJs,FaReact,FaNodeJs,FaJava} from 'react-icons/fa'
-import {SiMongodb,SiMysql,SiExpress} from 'react-icons/si'
+import {SiMongodb,SiExpress, SiPrisma, SiTypescript} from 'react-icons/si'
+import {TbBrandNextjs} from 'react-icons/tb'
 import {AiFillGithub} from 'react-icons/ai'
 import {ImGit} from 'react-icons/im'
 import { UserContext } from '../UserContext'
@@ -23,9 +24,19 @@ function Skills() {
             link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+javascript"
         },
         {
-            name:"React",
+            name:"TypeScript",
+            icon:<SiTypescript />,
+            link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+typescript"
+        },
+        {
+            name:"ReactJs",
             icon:<FaReact />,
-            link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+react"
+            link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+reactjs"
+        },
+        {
+            name:"NextJs",
+            icon:<TbBrandNextjs />,
+            link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+nextjs"
         },
         {
             name:"NodeJs",
@@ -43,14 +54,14 @@ function Skills() {
             link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+expressjs"
         },
         {
+            name:"Prisma",
+            icon:<SiPrisma />,
+            link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+prisma"
+        },
+        {
             name:"Java",
             icon:<FaJava />,
             link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+java"
-        },
-        {
-            name:"MySql",
-            icon:<SiMysql />,
-            link:"https://search.yahoo.com/search?fr=mcafee&type=E211US714G0&p=what+is+mysql"
         },
         {
             name:"Git",
@@ -80,7 +91,7 @@ function Skills() {
             <h2 className={`${mode?'text-white ':''}text-3xl font-bold py-6`}>Skills</h2>
             <div className='flex gap-4 flex-wrap'>
                 {skills.map((skill) =>(
-                    <a href={skill.link} target={'_blank'} className={`${mode?'text-white hover:bg-slate-600 ':'hover:bg-slate-200 '}flex gap-2 items-center shadow  transition-all duration-150 ease-in-out cursor-pointer justify-center border px-2 py-2 rounded-md`}>
+                    <a href={skill.link} target={'_blank'} rel="noreferrer" className={`${mode?'text-white hover:bg-slate-600 ':'hover:bg-slate-200 '}flex gap-2 items-center shadow  transition-all duration-150 ease-in-out cursor-pointer justify-center border px-2 py-2 rounded-md`}>
                         <span className='text-xl'>{skill.icon}</span>
                         <span className='text-lg font-semibold'>{skill.name}</span>
                     </a>

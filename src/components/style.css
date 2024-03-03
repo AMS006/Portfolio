@@ -35,6 +35,14 @@
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
 @keyframes wheel {
     to {
         opacity: 0;

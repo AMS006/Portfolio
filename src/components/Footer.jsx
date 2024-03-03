@@ -1,6 +1,6 @@
 import React from 'react'
-import {BsLinkedin,BsGithub} from 'react-icons/bs'
-import {SiLeetcode} from 'react-icons/si'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { SiLeetcode } from 'react-icons/si'
 function Footer() {
   return (
     <div className='lg:px-20 md:px-8 px-3 bg-[#1e293b] text-white'>
@@ -19,7 +19,7 @@ function Footer() {
         </div>
       </div>
       <div className='py-8 border-t border-white'>
-        <p className='text-center'>© Copyright 2023. Made by <b>Anas Sain</b></p>
+        <p className='text-center'>© Copyright 2024. Made by <b>Anas Sain</b></p>
       </div>
     </div>
   )

@@ -9,8 +9,8 @@ import { motion } from 'framer-motion'
 
 const leftTextVariants = {
     initial: {
-        x: -500,
-        y: 0,
+        x: 0,
+        y: 200,
         opacity: 0,
     },
     animate: {
@@ -136,7 +136,7 @@ function Skills() {
                 <motion.h2 className={`${mode ? 'text-white ' : ''}text-3xl font-bold py-6`}>Skills</motion.h2>
                 <motion.div className='flex gap-4 flex-wrap'>
                     {skills.map((skill) => (
-                        <motion.a href={skill.link} target={'_blank'} rel="noreferrer" className={`${mode ? 'text-white hover:bg-slate-600 ' : 'hover:bg-slate-200 '}flex gap-2 items-center shadow  transition-all duration-150 ease-in-out cursor-pointer justify-center border px-2 py-2 rounded-md`}>
+                        <motion.a key={skill.name} href={skill.link} target={'_blank'} rel="noreferrer" className={`${mode ? 'text-white hover:bg-slate-600 ' : 'hover:bg-slate-200 '}flex gap-2 items-center shadow  transition-all duration-150 ease-in-out cursor-pointer justify-center border px-2 py-2 rounded-md`}>
                             <span className='text-xl'>{skill.icon}</span>
                             <span className='text-lg font-semibold'>{skill.name}</span>
                         </motion.a>

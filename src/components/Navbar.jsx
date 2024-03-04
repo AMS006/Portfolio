@@ -33,6 +33,7 @@ function Navbar() {
 
     return (
         <motion.div
+            initial={false}
             animate={isOpen ? "open" : "closed"}
             className={`${mode ? 'bg-slate-800 text-white ' : 'bg-white '}`}
 

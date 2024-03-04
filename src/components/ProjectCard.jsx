@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { UserContext } from '../UserContext'
 import { motion } from 'framer-motion'
 const variants = {
@@ -19,7 +19,7 @@ const variants = {
   },
 };
 function ProjectCard({ project }) {
-  const navigate = useNavigate()
+
   const { mode } = useContext(UserContext)
   return (
     <>
@@ -37,7 +37,7 @@ function ProjectCard({ project }) {
           <h2 className={`text-2xl lg:text-left text-center font-bold`}>{project.name}</h2>
           <p className={`${mode ? 'text-white ' : ''}text-gray-700 text-lg lg:text-left text-center`}>{project.overview}</p>
           <div className='lg:text-left text-center'>
-            <button className='bg-blue-500 text-white shadow font-semibold text-xl w-32 rounded py-2' onClick={() => navigate(`/${project.id}`)}>Case Study</button>
+            <Link to={`/${project.id}`} className='bg-blue-500 px-2.5 text-white shadow font-semibold text-xl w-32 rounded py-2'>Case Study</Link>
           </div>
         </div>
       </motion.div>}

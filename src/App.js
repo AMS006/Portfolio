@@ -5,7 +5,8 @@ import CaseStudePage from './pages/CaseStude.page';
 import React from 'react'
 
 function App() {
-     const [isMounted, setIsMounted] = React.useState(false)
+  // Adding test comment
+    const [isMounted, setIsMounted] = React.useState(false)
 
     React.useEffect(() => {
         setIsMounted(true)
